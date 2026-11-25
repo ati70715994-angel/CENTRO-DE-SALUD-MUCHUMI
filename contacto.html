@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra el Centro de Salud de Mochumí. Consulta nuestra dirección, horario de atención y teléfono institucional.">
+    <title>Contacto y Ubicación | Centro de Salud de Mochumí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style-amaya.css">
+</head>
+<body>
+    <header class="contacto-encabezado">
+        <div class="contacto-encabezado__contenedor">
+            <a class="contacto-marca" href="#inicio" aria-label="Centro de Salud de Mochumí, inicio">
+                <span class="contacto-marca__sello" aria-hidden="true">CSM</span>
+                <span class="contacto-marca__nombre">Centro de Salud<span>Mochumí · Categoría I-3</span></span>
+            </a>
+            <nav class="contacto-navegacion" aria-label="Navegación de contacto">
+                <a href="#contacto">Contacto</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a class="nosotros-navegacion__contacto" id="volver" href="inicio.html">Volver <i class="bi bi-arrow-return-left"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="contacto-portada" aria-labelledby="contacto-titulo">
+            <div class="contacto-portada__contenido">
+                <p class="contacto-antetitulo"><span aria-hidden="true"></span> Estamos para orientarte</p>
+                <h1 id="contacto-titulo">Contacto y <span>ubicación</span></h1>
+                <p class="contacto-portada__texto">Acércate al Centro de Salud de Mochumí o comunícate con nosotros. Te brindamos atención con calidez y compromiso.</p>
+                <a class="contacto-boton" href="#ubicacion">
+                    Cómo llegar
+                    <span aria-hidden="true"><i class="bi bi-arrow-down"></i></span>
+                </a>
+            </div>
+            <aside class="contacto-portada__destacado" aria-label="Información del establecimiento">
+                <span class="contacto-portada__destacado-icono" aria-hidden="true"><i class="bi bi-plus"></i></span>
+                <p>Salud con calidez<br><strong>al servicio de Mochumí</strong></p>
+                <span class="contacto-portada__leyenda">Centro de Salud · RENIPRESS 00004380</span>
+            </aside>
+        </section>
+
+        <section class="contacto-seccion" id="contacto" aria-labelledby="contacto-info-titulo">
+            <div class="contacto-seccion__encabezado">
+                <p class="contacto-antetitulo">Información de atención</p>
+                <h2 id="contacto-info-titulo">Comunícate con nosotros</h2>
+                <p>Estos son los canales y datos oficiales del establecimiento.</p>
+            </div>
+            <div class="contacto-tarjetas">
+                <article class="contacto-tarjeta contacto-tarjeta--telefono">
+                    <span class="contacto-tarjeta__icono" aria-hidden="true">
+                        <i class="bi bi-telephone"></i>
+                    </span>
+                    <h3>Teléfono institucional</h3>
+                    <p>Para consultas y orientación.</p>
+                    <a class="contacto-tarjeta__enlace" href="tel:+5174424430">(074) 424430 <span aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span></a>
+                </article>
+                <article class="contacto-tarjeta">
+                    <span class="contacto-tarjeta__icono" aria-hidden="true">
+                        <i class="bi bi-geo-alt"></i>
+                    </span>
+                    <h3>Dirección</h3>
+                    <p>Visítanos en nuestro establecimiento.</p>
+                    <address>Calle Federico Villarreal S/N,<br>Mochumí, Lambayeque, Perú</address>
+                </article>
+                <article class="contacto-tarjeta">
+                    <span class="contacto-tarjeta__icono" aria-hidden="true">
+                        <i class="bi bi-clock"></i>
+                    </span>
+                    <h3>Horario de atención</h3>
+                    <p>Atención diaria en el establecimiento.</p>
+                    <strong class="contacto-tarjeta__valor">12 horas ininterrumpidas</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="contacto-ubicacion" id="ubicacion" aria-labelledby="ubicacion-titulo">
+            <div class="contacto-ubicacion__detalles">
+                <p class="contacto-antetitulo">Encuéntranos</p>
+                <h2 id="ubicacion-titulo">Estamos en Mochumí</h2>
+                <p class="contacto-ubicacion__direccion">Calle Federico Villarreal S/N<br>Distrito de Mochumí, Lambayeque</p>
+                <a class="contacto-boton contacto-boton--contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Federico+Villarreal%2C+Mochum%C3%AD%2C+Lambayeque%2C+Per%C3%BA" target="_blank" rel="noopener noreferrer">
+                    Abrir en Google Maps<span aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <p class="contacto-ubicacion__nota">La ubicación en el mapa es referencial. Si necesitas orientación, llámanos al <a href="tel:+5174424430">(074) 424430</a>.</p>
+            </div>
+            <div class="contacto-mapa">
+                <iframe
+                    title="Mapa de ubicación del Centro de Salud de Mochumí, Calle Federico Villarreal"
+                    src="https://www.google.com/maps?q=Calle+Federico+Villarreal%2C+Mochum%C3%AD%2C+Lambayeque%2C+Per%C3%BA&amp;output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contacto-pie">
+        <div class="contacto-pie__contenedor">
+            <p><strong>Centro de Salud de Mochumí</strong><br>Salud con calidez al servicio de Mochumí</p>
+            <p>Establecimiento de salud · Categoría I-3<br>RENIPRESS 00004380</p>
+        </div>
+    </footer>
+</body>
+</html>
