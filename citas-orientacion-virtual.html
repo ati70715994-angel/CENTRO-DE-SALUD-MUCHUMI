@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Canales y orientación para consultar sobre citas, requisitos SIS y telemedicina en el Centro de Salud Mochumí.">
+  <meta name="theme-color" content="#0c3b60">
+  <title>Citas y orientación virtual | Centro de Salud Mochumí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/citas-orientacion-virtual.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <p>Centro de Salud Mochumí · Categoría I-3 · Lambayeque</p>
+      <a href="tel:+5174424430">Teléfono institucional: (074) 424430</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="inicio.html" aria-label="Centro de Salud Mochumí, ir al inicio">
+        <span class="brand__mark" aria-hidden="true">+</span>
+        <span><span class="brand__name">Centro de Salud Mochumí</span><span class="brand__detail">Salud con calidez al servicio de Mochumí</span></span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false">Menú</button>
+      <div class="header-actions"><a class="button" href="tel:+5174424430">Llamar al establecimiento</a></div>
+    </div>
+    <nav class="container primary-nav" id="site-menu" aria-label="Navegación principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="microred-muchumi.html">Microrred</a>
+      <a href="emergencia-maternidad.html">Emergencias y maternidad</a>
+      <a href="citas-orientacion-virtual.html" aria-current="page">Citas y orientación virtual</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero__layout">
+        <div class="page-hero__content">
+          <span class="eyebrow">Estamos para orientarte</span>
+          <h1>Consulta cómo acceder a una cita o teleorientación.</h1>
+          <p class="page-hero__lead">Encuentra información de contacto, requisitos generales y los pasos para consultar por los servicios disponibles.</p>
+          <div class="hero-actions">
+            <a class="button" href="tel:+5174424430">Llamar: (074) 424430</a>
+            <a class="button button--secondary" href="#solicitud">Ver formulario de demostración</a>
+          </div>
+        </div>
+        <img class="page-hero__image-placeholder image-placeholder" src="img/imagen-referencial.svg" alt="Imagen referencial, pendiente de reemplazar por una imagen de teleorientación" width="640" height="420" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="section" id="solicitud" aria-labelledby="solicitud-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Orientación en salud</span>
+          <h2 id="solicitud-title">Cuéntanos qué información necesitas</h2>
+          <p>Este formulario es solo una maqueta de interfaz para el proyecto académico. No está conectado al Centro de Salud y no envía ni almacena tus datos.</p>
+        </div>
+        <div class="appointment-layout">
+          <form class="appointment-form" data-demo-form aria-describedby="privacy-note">
+            <h3>Formulario de demostración</h3>
+            <p class="appointment-form__intro">No ingreses datos personales o información médica real. Para orientación efectiva, llama al <a href="tel:+5174424430">(074) 424430</a>.</p>
+            <div class="form-notice" id="privacy-note">Prototipo sin conexión: la información introducida no se transmite ni se guarda. El equipo debe conectar un canal institucional seguro antes de usar este formulario con pacientes.</div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="nombre">Nombre de ejemplo <span class="required" aria-hidden="true">*</span></label>
+                <input id="nombre" name="nombre" type="text" autocomplete="off" placeholder="Escribe un nombre ficticio" required maxlength="80">
+              </div>
+              <div class="form-field">
+                <label for="telefono">Teléfono de ejemplo <span class="required" aria-hidden="true">*</span></label>
+                <input id="telefono" name="telefono" type="tel" autocomplete="off" inputmode="tel" placeholder="No uses tu número real" required maxlength="20">
+              </div>
+              <div class="form-field">
+                <label for="servicio">Servicio de interés <span class="required" aria-hidden="true">*</span></label>
+                <select id="servicio" name="servicio" required>
+                  <option value="">Selecciona un servicio</option>
+                  <option>Medicina general</option>
+                  <option>Enfermería e inmunizaciones</option>
+                  <option>Obstetricia y salud materna</option>
+                  <option>Odontología</option>
+                  <option>Telemedicina</option>
+                  <option>Otro servicio</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="modalidad">Tipo de orientación</label>
+                <select id="modalidad" name="modalidad">
+                  <option>Presencial</option>
+                  <option>Teleorientación</option>
+                  <option>Consulta de requisitos</option>
+                </select>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="consulta">¿Qué deseas consultar? (ejemplo ficticio)</label>
+                <textarea id="consulta" name="consulta" placeholder="No incluyas síntomas, diagnósticos ni otra información de salud real." maxlength="300"></textarea>
+                <span class="form-field__hint">No uses este formulario para urgencias ni para compartir datos de salud.</span>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="button" type="button" data-demo-submit>Probar formulario (sin enviar)</button>
+              <span class="form-field__hint">Los campos con * son obligatorios para esta demostración.</span>
+            </div>
+            <p class="form-success" data-form-status role="status" aria-live="polite" hidden></p>
+          </form>
+
+          <aside>
+            <section class="info-card" aria-labelledby="pasos-title">
+              <h3 id="pasos-title">¿Cómo solicitar orientación?</h3>
+              <ol class="steps-list">
+                <li>Llama al número institucional para consultar el servicio y horario.</li>
+                <li>Pregunta qué documentos o requisitos necesitas según tu atención.</li>
+                <li>Confirma si la consulta requiere acudir presencialmente o puede coordinarse por telemedicina.</li>
+              </ol>
+            </section>
+            <section class="info-card" aria-labelledby="requisitos-title">
+              <h3 id="requisitos-title">Antes de acudir</h3>
+              <ul class="requirements-list">
+                <li>Consulta los requisitos vigentes por teléfono.</li>
+                <li>Ten a mano tu documento de identidad y, si corresponde, información de afiliación al SIS.</li>
+                <li>No compartas datos personales por canales no verificados.</li>
+              </ul>
+            </section>
+            <section class="info-card" aria-labelledby="canales-title">
+              <h3 id="canales-title">Canales de contacto</h3>
+              <ul class="contact-list">
+                <li><a href="tel:+5174424430">(074) 424430</a></li>
+                <li>Calle Federico Villarreal S/N, Mochumí, Lambayeque</li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__main">
+      <div><h2>Centro de Salud Mochumí</h2><p>Salud con calidez al servicio de nuestra comunidad.</p></div>
+      <div><h3>Contacto</h3><p><a href="tel:+5174424430">(074) 424430</a><br>Calle Federico Villarreal S/N, Mochumí, Lambayeque</p></div>
+      <div><h3>Enlaces rápidos</h3><p><a href="inicio.html">Inicio</a><br><a href="microred-muchumi.html">Microrred</a><br><a href="emergencia-maternidad.html">Emergencias y maternidad</a></p></div>
+    </div>
+    <div class="container site-footer__bottom"><p>© 2026 Centro de Salud Mochumí · Este formulario es demostrativo y no brinda atención clínica.</p></div>
+  </footer>
+  <a class="floating-help" href="tel:+5174424430" aria-label="Llamar al Centro de Salud Mochumí al 074 424430">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span class="floating-help__label">Llamar al centro de salud</span>
+  </a>
+</body>
+</html>

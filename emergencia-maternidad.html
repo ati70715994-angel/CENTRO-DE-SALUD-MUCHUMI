@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información sobre urgencias, referencias, ambulancia y atención materna del Centro de Salud Mochumí.">
+  <meta name="theme-color" content="#0c3b60">
+  <title>Emergencias y maternidad | Centro de Salud Mochumí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/emergencia-maternidad.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <p>Centro de Salud Mochumí · Categoría I-3 · Lambayeque</p>
+      <a href="tel:+5174424430">Teléfono institucional: (074) 424430</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="inicio.html" aria-label="Centro de Salud Mochumí, ir al inicio">
+        <span class="brand__mark" aria-hidden="true">+</span>
+        <span><span class="brand__name">Centro de Salud Mochumí</span><span class="brand__detail">Salud con calidez al servicio de Mochumí</span></span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false">Menú</button>
+      <div class="header-actions"><a class="button" href="tel:+5174424430">Llamar al establecimiento</a></div>
+    </div>
+    <nav class="container primary-nav" id="site-menu" aria-label="Navegación principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="microred-muchumi.html">Microrred</a>
+      <a href="emergencia-maternidad.html" aria-current="page">Emergencias y maternidad</a>
+      <a href="citas-orientacion-virtual.html">Citas y orientación virtual</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero__layout">
+        <div class="page-hero__content">
+          <span class="eyebrow">Atención oportuna y acompañamiento</span>
+          <h1>Estamos para orientarte en momentos importantes.</h1>
+          <p class="page-hero__lead">Información sobre urgencias, referencias, ambulancia y cuidado materno en el Centro de Salud Mochumí.</p>
+          <div class="hero-actions">
+            <a class="button button--urgent" href="tel:+5174424430">Llamar: (074) 424430</a>
+            <a class="button button--secondary" href="#materno">Atención materna</a>
+          </div>
+        </div>
+        <img class="page-hero__image-placeholder image-placeholder" src="img/imagen-referencial.svg" alt="Imagen referencial, pendiente de reemplazar por una fotografía de la ambulancia" width="640" height="420" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="urgencia-title">
+      <div class="container">
+        <div class="emergency-banner">
+          <span class="emergency-banner__icon" aria-hidden="true">!</span>
+          <div>
+            <h2 id="urgencia-title">¿Necesitas orientación por una urgencia?</h2>
+            <p>Llama al establecimiento para recibir orientación sobre el servicio y la coordinación de referencias. Si existe peligro inmediato, busca atención de emergencia sin demora.</p>
+          </div>
+          <a class="button button--urgent" href="tel:+5174424430">Llamar ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="servicios-urgencia-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">Atención y referencia</span><h2 id="servicios-urgencia-title">Orientación para una atención oportuna</h2></div>
+          <p class="section-heading__intro">La disponibilidad y el tipo de atención dependen de la evaluación del personal de salud. Comunícate antes para recibir indicaciones.</p>
+        </div>
+        <div class="emergency-services">
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">01</span>
+            <h3>Urgencias</h3>
+            <p>Atención inicial y estabilización según evaluación clínica y capacidad resolutiva del establecimiento.</p>
+            <span class="service-card__meta">Orientación telefónica</span>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">02</span>
+            <h3>Ambulancia y referencias</h3>
+            <p>Coordinación del sistema de referencia para facilitar el traslado cuando el personal de salud lo indique.</p>
+            <span class="service-card__meta">Sistema indicado: 24/7*</span>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">03</span>
+            <h3>Horario del establecimiento</h3>
+            <p>El Centro de Salud brinda atención diaria durante 12 horas. Llama para confirmar el horario vigente y el servicio disponible.</p>
+            <span class="service-card__meta">Atención diaria</span>
+          </article>
+        </div>
+        <div class="emergency-contact">
+          <div><strong>Centro de Salud Mochumí</strong><br>Para orientación y coordinación</div>
+          <a href="tel:+5174424430">(074) 424430</a>
+        </div>
+        <p class="service-note">*El manual institucional describe un sistema de ambulancia y referencias 24/7. Confirma la disponibilidad al llamar.</p>
+      </div>
+    </section>
+
+    <section class="section" id="materno" aria-labelledby="materno-title">
+      <div class="container">
+        <div class="maternity-panel">
+          <div class="maternity-panel__content">
+            <span class="eyebrow">Cuidado con calidez</span>
+            <h2 id="materno-title">Acompañamiento materno e infantil</h2>
+            <p>El equipo de salud brinda orientación y servicios preventivos para cuidar a la madre, al recién nacido y a la familia.</p>
+            <ul class="care-list">
+              <li>Control prenatal y orientación durante el embarazo.</li>
+              <li>Planificación familiar y salud sexual y reproductiva.</li>
+              <li>Psicoprofilaxis y educación para el cuidado materno.</li>
+              <li>Orientación sobre controles, horarios y requisitos vigentes.</li>
+            </ul>
+            <p><a class="button" href="tel:+5174424430">Consultar disponibilidad</a></p>
+          </div>
+          <img class="maternity-panel__image-placeholder image-placeholder" src="img/imagen-referencial.svg" alt="Imagen referencial, pendiente de reemplazar por una fotografía del servicio materno" width="640" height="420" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="proyecto-title">
+      <div class="container">
+        <div class="project-highlight">
+          <div>
+            <span class="eyebrow">Proyección para la comunidad</span>
+            <h2 id="proyecto-title">Proyecto de ampliación materno-infantil</h2>
+            <p>El manual institucional identifica el proyecto de inversión CUI 2609511, bajo la modalidad de Obras por Impuestos, orientado a la ampliación y modernización de infraestructura. Consulta los canales oficiales para conocer su estado y avances.</p>
+          </div>
+          <div><span class="project-highlight__amount">S/ 21 millones</span><span>Proyecto CUI 2609511 · Información referencial</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__main">
+      <div><h2>Centro de Salud Mochumí</h2><p>Salud con calidez al servicio de nuestra comunidad.</p></div>
+      <div><h3>Contacto</h3><p><a href="tel:+5174424430">(074) 424430</a><br>Calle Federico Villarreal S/N, Mochumí, Lambayeque</p></div>
+      <div><h3>Enlaces rápidos</h3><p><a href="inicio.html">Inicio</a><br><a href="microred-muchumi.html">Microrred</a><br><a href="citas-orientacion-virtual.html">Citas y orientación</a></p></div>
+    </div>
+    <div class="container site-footer__bottom"><p>© 2026 Centro de Salud Mochumí · En caso de urgencia, comunícate con el establecimiento.</p></div>
+  </footer>
+  <a class="floating-help" href="tel:+5174424430" aria-label="Llamar al Centro de Salud Mochumí al 074 424430">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span class="floating-help__label">Llamar al centro de salud</span>
+  </a>
+</body>
+</html>

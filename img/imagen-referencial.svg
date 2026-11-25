@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Imagen referencial</title>
+  <desc id="desc">Marcador temporal para reemplazar por una fotografía real del Centro de Salud Mochumí.</desc>
+  <rect width="640" height="420" rx="28" fill="#eaf4ed"/>
+  <circle cx="520" cy="90" r="72" fill="#e6b800" opacity=".18"/>
+  <circle cx="112" cy="352" r="92" fill="#0c3b60" opacity=".06"/>
+  <rect x="184" y="75" width="272" height="212" rx="24" fill="#fff" stroke="#bfd3c7" stroke-width="4"/>
+  <circle cx="390" cy="132" r="23" fill="#e6b800"/>
+  <path d="m210 255 76-82 48 48 35-36 45 70H210z" fill="#00875a" opacity=".82"/>
+  <path d="M209 255h205" stroke="#0c3b60" stroke-linecap="round" stroke-width="5"/>
+  <rect x="244" y="313" width="152" height="8" rx="4" fill="#0c3b60" opacity=".75"/>
+  <rect x="270" y="331" width="100" height="7" rx="3.5" fill="#64748b" opacity=".55"/>
+  <text x="320" y="375" fill="#0c3b60" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2" text-anchor="middle">IMAGEN REFERENCIAL</text>
+</svg>
