@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce la cartera de servicios del Centro de Salud Mochumí, establecimiento de categoría I-3.">
+  <meta name="theme-color" content="#0c3b60">
+  <title>Cartera de servicios I-3 | Centro de Salud Mochumí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/cartera-servicios.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/cartera-servicios.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <p>Centro de Salud Mochumí · Categoría I-3 · Lambayeque</p>
+      <a href="tel:+5174424430">Teléfono institucional: (074) 424430</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="inicio.html" aria-label="Centro de Salud Mochumí, ir al inicio">
+        <span class="brand__mark" aria-hidden="true">+</span>
+        <span><span class="brand__name">Centro de Salud Mochumí</span><span class="brand__detail">Salud con calidez al servicio de Mochumí</span></span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false">Menú</button>
+      <div class="header-actions"><a class="button" href="citas-orientacion-virtual.html">Orientación y citas</a></div>
+    </div>
+    <nav class="container primary-nav" id="site-menu" aria-label="Navegación principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="cartera-servicios.html" aria-current="page">Cartera de Servicios I-3</a>
+      <a href="microred-muchumi.html">Microrred</a>
+      <a href="emergencia-maternidad.html">Emergencias y maternidad</a>
+      <a href="citas-orientacion-virtual.html">Citas y orientación virtual</a>
+      <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero__layout">
+        <div class="page-hero__content">
+          <span class="eyebrow">Atención integral · Categoría I-3</span>
+          <h1>Servicios de salud cerca de tu comunidad</h1>
+          <p class="page-hero__lead">Conoce la cartera de servicios del Centro de Salud Mochumí y consulta con nuestro equipo para confirmar horarios, disponibilidad y requisitos.</p>
+          <div class="hero-actions">
+            <a class="button" href="#servicios">Explorar servicios</a>
+            <a class="button button--secondary" href="tel:+5174424430">Llamar: (074) 424430</a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Información del establecimiento">
+          <span class="hero-note__mark" aria-hidden="true">+</span>
+          <p><strong>Centro de Salud Mochumí</strong><br>Establecimiento de primer nivel, categoría I-3.</p>
+          <a href="preguntas-frecuentes.html">Resuelve tus dudas frecuentes <span aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Cartera de servicios</span>
+            <h2 id="servicios-title">Atención para distintas necesidades</h2>
+          </div>
+          <p class="section-heading__intro">La disponibilidad depende del servicio y del horario vigente. Comunícate antes de acudir para recibir orientación.</p>
+        </div>
+
+        <div class="service-tools">
+          <div class="filter-group" role="group" aria-label="Filtrar servicios por área">
+            <button class="filter-button is-active" type="button" data-service-filter="todos" aria-pressed="true">Todos</button>
+            <button class="filter-button" type="button" data-service-filter="consulta" aria-pressed="false">Consulta</button>
+            <button class="filter-button" type="button" data-service-filter="prevencion" aria-pressed="false">Prevención</button>
+            <button class="filter-button" type="button" data-service-filter="materna" aria-pressed="false">Materna</button>
+            <button class="filter-button" type="button" data-service-filter="comunidad" aria-pressed="false">Comunidad</button>
+          </div>
+          <p class="result-count" data-service-count role="status" aria-live="polite">Se muestran 6 servicios.</p>
+        </div>
+
+        <div class="service-grid" data-service-list>
+          <article class="service-card" data-service-category="consulta">
+            <span class="service-card__icon" aria-hidden="true">01</span>
+            <p class="service-card__eyebrow">Consulta externa</p>
+            <h3>Medicina general</h3>
+            <p>Atención médica integral para problemas de salud frecuentes, evaluación general y seguimiento de enfermedades crónicas.</p>
+            <a class="service-card__link" href="citas-orientacion-virtual.html">Consultar cómo acceder <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card" data-service-category="prevencion">
+            <span class="service-card__icon" aria-hidden="true">02</span>
+            <p class="service-card__eyebrow">Cuidado y prevención</p>
+            <h3>Enfermería, CRED e inmunizaciones</h3>
+            <p>Control de crecimiento y desarrollo, vacunación según el esquema nacional, desparasitación y tamizaje de anemia.</p>
+            <a class="service-card__link" href="tel:+5174424430">Consultar horarios y disponibilidad <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card" data-service-category="materna prevencion">
+            <span class="service-card__icon" aria-hidden="true">03</span>
+            <p class="service-card__eyebrow">Salud sexual y reproductiva</p>
+            <h3>Obstetricia y salud materna</h3>
+            <p>Control prenatal, planificación familiar, Papanicolaou y psicoprofilaxis. El personal puede orientar sobre controles y requisitos.</p>
+            <a class="service-card__link" href="emergencia-maternidad.html">Ver información materna <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card" data-service-category="consulta prevencion">
+            <span class="service-card__icon" aria-hidden="true">04</span>
+            <p class="service-card__eyebrow">Salud bucal</p>
+            <h3>Odontología</h3>
+            <p>Atención preventiva y restaurativa, profilaxis, curaciones y exodoncias simples, según evaluación y disponibilidad.</p>
+            <a class="service-card__link" href="citas-orientacion-virtual.html">Consultar requisitos <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card service-card--highlight" data-service-category="consulta comunidad">
+            <span class="service-card__icon" aria-hidden="true">05</span>
+            <p class="service-card__eyebrow">Atención oportuna</p>
+            <h3>Urgencias y referencias</h3>
+            <p>Evaluación inicial y coordinación de referencias cuando el equipo de salud lo indique. Confirma por teléfono la disponibilidad.</p>
+            <a class="service-card__link" href="emergencia-maternidad.html">Información para urgencias <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card" data-service-category="prevencion comunidad">
+            <span class="service-card__icon" aria-hidden="true">06</span>
+            <p class="service-card__eyebrow">Salud ambiental</p>
+            <h3>Monitoreo de metales pesados</h3>
+            <p>El manual institucional contempla intervenciones de campo, tamizaje y monitoreo nutricional preventivo. Consulta al equipo por las actividades vigentes.</p>
+            <a class="service-card__link" href="tel:+5174424430">Solicitar orientación <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="empty-state" data-service-empty hidden>No encontramos servicios en esta área.</p>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="digital-title">
+      <div class="container">
+        <div class="digital-panel">
+          <div class="digital-panel__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 5.5v15M8 7h8M8 10h6"/></svg>
+          </div>
+          <div>
+            <span class="eyebrow">Salud digital</span>
+            <h2 id="digital-title">Orientación sobre telemedicina</h2>
+            <p>El Centro de Salud Mochumí participa en la coordinación de teleconsultas y teleorientación. Consulta qué especialidades están disponibles y cómo acceder a través de Teleatiende.</p>
+          </div>
+          <a class="button button--secondary" href="citas-orientacion-virtual.html">Ver canales de orientación</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <span class="eyebrow">¿Tienes alguna consulta?</span>
+            <h2 id="contact-title">Confirma la información antes de acudir</h2>
+            <p>Los horarios, requisitos y disponibilidad pueden cambiar. Llama al establecimiento para recibir orientación actualizada.</p>
+          </div>
+          <a class="button" href="tel:+5174424430">Llamar: (074) 424430</a>
+        </div>
+        <p class="source-note">Cartera de servicios referencial conforme a la categoría I-3 y la Resolución Directoral Ejecutiva N.° 089-2024-GR.LAMB/GERESA-DESIP. La atención depende de la evaluación del personal y la disponibilidad vigente.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__main">
+      <div><h2>Centro de Salud Mochumí</h2><p>Salud con calidez al servicio de nuestra comunidad.</p></div>
+      <div><h3>Contacto</h3><p><a href="tel:+5174424430">(074) 424430</a><br>Calle Federico Villarreal S/N, Mochumí, Lambayeque</p></div>
+      <div><h3>Enlaces rápidos</h3><p><a href="inicio.html">Inicio</a><br><a href="microred-muchumi.html">Microrred</a><br><a href="emergencia-maternidad.html">Emergencias y maternidad</a><br><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></p></div>
+    </div>
+    <div class="container site-footer__bottom"><p>© 2026 Centro de Salud Mochumí · Información referencial; confirma los datos vigentes por teléfono.</p></div>
+  </footer>
+  <a class="floating-help" href="https://wa.me/51907559562?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20los%20servicios%20del%20Centro%20de%20Salud%20Mochum%C3%AD." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para contactar al Centro de Salud Mochumí">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.4 7.6L3 20l.8-4.9a8.5 8.5 0 1 1 16.7-3.5Z"/><path d="M8.1 8.3c.4-.7.8-.6 1.1-.6s.5.1.7.5l.8 1.7c.1.2.1.4 0 .6l-.6.7c-.2.2-.2.4-.1.6.4.7.9 1.2 1.5 1.6.7.5 1.4.8 1.7.9.3.1.5.1.7-.1l.8-.8c.2-.2.4-.2.6-.1l1.7.8c.3.1.5.2.5.4 0 .3-.2 1-.7 1.4-.5.4-1.1.5-1.4.5-3.9 0-8.5-4.5-8.5-8.4 0-.8.5-1.6 1.2-1.9Z"/></svg>
+    <span class="floating-help__label">Escribir por WhatsApp</span>
+  </a>
+</body>
+</html>
