@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias y Galería | Centro de Salud de Mochumí I-3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/noticias_y_galeria.css" />
+  <link rel="stylesheet" href="css/inicio.css" />
+</head>
+<body>
+
+  <!-- Barra Superior Institucional GERESA -->
+  <div class="top-bar">
+    <div class="container flex-between">
+      <span>GERESA Lambayeque • Microrred Mochumí • RENIPRESS 00004380</span>
+      <span>Urgencias y Ambulancia 24/7: <strong>(074) 424430</strong></span>
+    </div>
+  </div>
+
+  <!-- Encabezado Principal -->
+  <header class="header">
+    <div class="container flex-between">
+      <div class="brand" onclick="irInicio()">
+        <div class="brand-logo">✚</div>
+        <div>
+          <h1>CENTRO DE SALUD MOCHUMÍ</h1>
+          <small>Categoría I-3 • “Salud con calidez al servicio de Mochumí”</small>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a class="nav-btn" href="inicio.html">Inicio</a>
+        <a class="nav-btn" href="cartera-servicios.html">Cartera de servicios</a>
+        <a class="nav-btn" href="microred-muchumi.html">Microrred</a>
+        <a class="nav-btn" href="emergencia-maternidad.html">Emergencias y maternidad</a>
+        <a class="nav-btn" href="citas-orientacion-virtual.html">Citas y orientación</a>
+        <a class="nav-btn" href="telemedicina.html">Telemedicina</a>
+        <a class="nav-btn" href="proyectos-inversion.html">Proyecto de inversión</a>
+        <a class="nav-btn" href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+        <a class="nav-btn active" href="Noticias_y_Galeria.html" aria-current="page">Noticias y galería</a>
+      </nav>
+    </div>
+    <div class="accent-line"></div>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="container">
+
+    <!-- Barra de Ruta (Breadcrumb) -->
+    <div class="breadcrumb">
+      <span onclick="irInicio()" class="crumb-link">🏠 C.S. Mochumí</span>
+      <span>/</span>
+      <span onclick="irInicio()" class="crumb-link">8. Noticias y Galería</span>
+      <span>/</span>
+      <strong id="crumb-actual">Menú de Módulos</strong>
+    </div>
+
+    <!-- VISTA 1: MENÚ DE 4 ÍCONOS + DOCTOR HORA DE AVENTURA -->
+    <section id="vista-menu" class="menu-panel">
+      <div class="layout-principal">
+        
+        <!-- Lado Izquierdo: Menú de Módulos -->
+        <div class="menu-contenido">
+          <div class="menu-intro">
+            <h2>Noticias, Campañas y Archivo Institucional</h2>
+            <p>Selecciona un módulo para revisar los reportes operativos, registros fotográficos y comunicados oficiales de nuestra jurisdicción.</p>
+          </div>
+
+          <div class="icon-grid">
+            <button type="button" class="icon-card" onclick="abrirModulo('ambulancias')">
+              <div class="icon-box bg-blue">🚑</div>
+              <span>Reportes de Entregas<br><strong>(Ambulancia)</strong></span>
+            </button>
+
+            <button type="button" class="icon-card" onclick="abrirModulo('comunitaria')">
+              <div class="icon-box bg-green">🩺</div>
+              <span>Campañas de<br><strong>Salud Comunitaria</strong></span>
+            </button>
+
+            <button type="button" class="icon-card" onclick="abrirModulo('vacunacion')">
+              <div class="icon-box bg-teal">💉</div>
+              <span>Campañas<br><strong>Vacunatorias</strong></span>
+            </button>
+
+            <button type="button" class="icon-card" onclick="abrirModulo('prensa')">
+              <div class="icon-box bg-gold">📰</div>
+              <span>Archivo de<br><strong>Prensa Oficial</strong></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Lado Derecho: Doctor en estilo Hora de Aventura -->
+        <div class="doctor-card">
+          <div class="doctor-img-container">
+            <img src="ZK_BWAY2hOd_HpvM.jpg" alt="Doctor Mochumí - Hora de Aventura" class="doctor-img" />
+          </div>
+          <div class="doctor-info">
+            <h4>Dr. Mochumí</h4>
+            <p>“Cuidando la salud de nuestra comunidad con innovación y compromiso”</p>
+            <span class="doctor-badge">Personal Médico I-3</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VISTA 2: INFORMACIÓN DETALLADA DEL MÓDULO SELECCIONADO -->
+    <section id="vista-detalle" class="detalle-panel hidden">
+      <div class="detalle-header">
+        <div>
+          <span id="detalle-badge" class="badge"></span>
+          <h2 id="detalle-titulo"></h2>
+          <p id="detalle-subtitulo"></p>
+        </div>
+        <button type="button" class="btn-volver" onclick="irInicio()">← Volver al Menú Principal</button>
+      </div>
+
+      <!-- Contenido dinámico (Reportes, Galería o Tabla de Prensa) -->
+      <div id="detalle-contenido"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__main">
+      <div><h2>Centro de Salud Mochumí</h2><p>Salud con calidez al servicio de nuestra comunidad.</p></div>
+      <div><h3>Contacto</h3><p><a href="tel:+5174424430">(074) 424430</a><br>Calle Federico Villarreal S/N, Mochumí, Lambayeque</p></div>
+      <div><h3>Enlaces rápidos</h3><p><a href="inicio.html">Inicio</a><br><a href="cartera-servicios.html">Cartera de servicios</a><br><a href="microred-muchumi.html">Microrred</a><br><a href="emergencia-maternidad.html">Emergencias y maternidad</a><br><a href="citas-orientacion-virtual.html">Citas y orientación</a><br><a href="telemedicina.html">Telemedicina</a><br><a href="proyectos-inversion.html">Proyecto de inversión</a><br><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><br><a href="Noticias_y_Galeria.html">Noticias y galería</a></p></div>
+    </div>
+    <div class="container site-footer__bottom"><p>© 2026 Centro de Salud Mochumí · Información referencial; consulta los canales institucionales para confirmar datos vigentes.</p></div>
+  </footer>
+
+  <!-- Visor Modal para ampliar información -->
+  <dialog id="visor" onclick="if(event.target===this) this.close()">
+    <div class="visor-box">
+      <button type="button" class="btn-cerrar" onclick="document.getElementById('visor').close()">✕</button>
+      <div id="visor-cuerpo"></div>
+    </div>
+  </dialog>
+
+  <script src="js/noticias_y_galeria.js"></script>
+</body>
+</html>
