@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/noticias_y_galeria.css" />
+  <link rel="stylesheet" href="css/inicio.css" />
 </head>
 <body>
 
@@ -30,11 +31,15 @@
         </div>
       </div>
       <nav class="main-nav">
-        <button id="nav-inicio" class="nav-btn active" onclick="irInicio()">Panel Principal</button>
-        <button id="nav-ambulancias" class="nav-btn" onclick="abrirModulo('ambulancias')">Ambulancia</button>
-        <button id="nav-comunitaria" class="nav-btn" onclick="abrirModulo('comunitaria')">Salud Comunitaria</button>
-        <button id="nav-vacunacion" class="nav-btn" onclick="abrirModulo('vacunacion')">Vacunación</button>
-        <button id="nav-prensa" class="nav-btn" onclick="abrirModulo('prensa')">Prensa</button>
+        <a class="nav-btn" href="inicio.html">Inicio</a>
+        <a class="nav-btn" href="cartera-servicios.html">Cartera de servicios</a>
+        <a class="nav-btn" href="microred-muchumi.html">Microrred</a>
+        <a class="nav-btn" href="emergencia-maternidad.html">Emergencias y maternidad</a>
+        <a class="nav-btn" href="citas-orientacion-virtual.html">Citas y orientación</a>
+        <a class="nav-btn" href="telemedicina.html">Telemedicina</a>
+        <a class="nav-btn" href="proyectos-inversion.html">Proyecto de inversión</a>
+        <a class="nav-btn" href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+        <a class="nav-btn active" href="Noticias_y_Galeria.html" aria-current="page">Noticias y galería</a>
       </nav>
     </div>
     <div class="accent-line"></div>
@@ -118,19 +123,13 @@
 
   </main>
 
-  <!-- Pie de Página Oficial -->
-  <footer>
-    <div class="footer-gold-bar"></div>
-    <div class="container flex-between">
-      <div>
-        <strong>Centro de Salud de Mochumí — Categoría I-3</strong>
-        <p>Calle Federico Villarreal S/N, Distrito de Mochumí, Lambayeque • RUC: 20437220183</p>
-      </div>
-      <div class="footer-right">
-        <p>Red de Salud Lambayeque • GERESA</p>
-        <small>Atención Presencial 12 Horas | Urgencias 24/7</small>
-      </div>
+  <footer class="site-footer">
+    <div class="container site-footer__main">
+      <div><h2>Centro de Salud Mochumí</h2><p>Salud con calidez al servicio de nuestra comunidad.</p></div>
+      <div><h3>Contacto</h3><p><a href="tel:+5174424430">(074) 424430</a><br>Calle Federico Villarreal S/N, Mochumí, Lambayeque</p></div>
+      <div><h3>Enlaces rápidos</h3><p><a href="inicio.html">Inicio</a><br><a href="cartera-servicios.html">Cartera de servicios</a><br><a href="microred-muchumi.html">Microrred</a><br><a href="emergencia-maternidad.html">Emergencias y maternidad</a><br><a href="citas-orientacion-virtual.html">Citas y orientación</a><br><a href="telemedicina.html">Telemedicina</a><br><a href="proyectos-inversion.html">Proyecto de inversión</a><br><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><br><a href="Noticias_y_Galeria.html">Noticias y galería</a></p></div>
     </div>
+    <div class="container site-footer__bottom"><p>© 2026 Centro de Salud Mochumí · Información referencial; consulta los canales institucionales para confirmar datos vigentes.</p></div>
   </footer>
 
   <!-- Visor Modal para ampliar información -->
