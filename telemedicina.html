@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/telemedicina.css">
   <link rel="stylesheet" href="css/inicio.css">
   <link rel="stylesheet" href="css/telemedicina.css">
+  <script src="js/site.js" defer></script>
   <script src="js/telemedicina.js" defer></script>
 </head>
 <body class="telemedicina">
@@ -31,40 +31,51 @@
       <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false">Menú</button>
       <div class="header-actions"><a class="button" href="tel:+5174424430">Llamar al establecimiento</a></div>
     </div>
-    <a class="telemedicina__brand" href="index.html">Centro de Salud de Mochumí</a>
     <nav class="container primary-nav" id="site-menu" aria-label="Navegación principal">
-      <a href="inicio.html" aria-current="page">Inicio</a>
+      <a href="inicio.html">Inicio</a>
       <a href="microred-muchumi.html">Microrred</a>
       <a href="emergencia-maternidad.html">Emergencias y maternidad</a>
       <a href="citas-orientacion-virtual.html">Citas y orientación virtual</a>
-      <a href="telemedicina.html">Telemedicina</a>
-      <a href="proyectos-inversion.html">Inversion en Proyectos</a>
+      <a href="telemedicina.html" aria-current="page">Telemedicina</a>
+      <a href="proyectos-inversion.html">Proyecto de inversión</a>
     </nav>
   </header>
-  <main id="contenido">
+
+  <main id="main-content">
     <section class="telemedicina__hero">
       <p class="telemedicina__eyebrow">Atención a distancia</p>
       <h1>Telemedicina</h1>
       <p>Recibe orientación para acceder a una teleconsulta a través de los canales habilitados por el establecimiento y la red regional.</p>
       <a class="telemedicina__button" href="#solicitud">Ver cómo solicitarla</a>
     </section>
+
     <section class="telemedicina__section" aria-labelledby="pasos-titulo">
       <p class="telemedicina__eyebrow">Guía de acceso</p>
       <h2 id="pasos-titulo">¿Cómo solicitar una teleconsulta?</h2>
       <ol class="telemedicina__steps">
-        <li><span>1</span><div><h3>Consulta disponibilidad</h3><p>Comunícate con el establecimiento para confirmar si tu motivo de consulta puede atenderse a distancia y qué especialidades están disponibles.</p></div></li>
-        <li><span>2</span><div><h3>Ten tus datos a la mano</h3><p>Prepara tu documento de identidad, teléfono de contacto y la información clínica que te solicite el personal.</p></div></li>
+        <li><span>1</span><div><h3>Consulta disponibilidad</h3><p>Comunícate con el establecimiento para confirmar si tu motivo de consulta puede atenderse a distancia y qué áreas están disponibles.</p></div></li>
+        <li><span>2</span><div><h3>Ten tus datos a la mano</h3><p>Prepara tu documento de identidad y teléfono de contacto. Comparte información clínica solo por el canal oficial que te indique el personal.</p></div></li>
         <li><span>3</span><div><h3>Confirma la cita</h3><p>El personal te indicará la fecha, hora, canal de conexión y cualquier requisito para la teleconsulta.</p></div></li>
         <li><span>4</span><div><h3>Conéctate a tiempo</h3><p>Busca un lugar privado con buena señal y sigue las instrucciones recibidas. Si no puedes conectarte, avisa al establecimiento.</p></div></li>
       </ol>
-      <p class="telemedicina__note">La teleconsulta depende de evaluación y disponibilidad. Si tienes una emergencia, acude al servicio de urgencias o llama al canal de emergencia local.</p>
+      <p class="telemedicina__note">La teleconsulta depende de evaluación y disponibilidad de la red regional. Si tienes una emergencia, acude al servicio de urgencias o llama al canal de emergencia local.</p>
     </section>
+
     <section class="telemedicina__section telemedicina__section--tint" aria-labelledby="especialidades-titulo">
-      <p class="telemedicina__eyebrow">Red regional</p>
-      <h2 id="especialidades-titulo">Especialidades disponibles</h2>
-      <p>La disponibilidad puede variar según la programación de la red regional. Confirma con el establecimiento qué especialidades se encuentran habilitadas antes de solicitar la cita.</p>
-      <div class="telemedicina__availability"><strong>Información por confirmar</strong><span>Agregar aquí las especialidades oficiales y el canal de referencia cuando el Centro de Salud los proporcione.</span></div>
+      <p class="telemedicina__eyebrow">Cartera del establecimiento</p>
+      <h2 id="especialidades-titulo">Especialidades y áreas de orientación</h2>
+      <p>Estas son áreas de atención del establecimiento que puedes consultar. La atención por telemedicina y la disponibilidad de especialistas deben confirmarse con el Centro de Salud y la red regional.</p>
+      <ul class="telemedicina__specialty-list">
+        <li>Medicina general</li>
+        <li>Obstetricia</li>
+        <li>Enfermería y CRED</li>
+        <li>Odontología</li>
+        <li>Inmunizaciones</li>
+        <li>Salud ambiental</li>
+        <li>Otra área o solicitud de orientación</li>
+      </ul>
     </section>
+
     <section id="solicitud" class="telemedicina__section" aria-labelledby="solicitud-titulo">
       <p class="telemedicina__eyebrow">Orientación</p>
       <h2 id="solicitud-titulo">Solicita información para una cita virtual</h2>
@@ -72,8 +83,20 @@
       <form class="telemedicina__form" id="telemedicina-form">
         <label>Nombre y apellidos<input name="nombre" autocomplete="name" required></label>
         <label>Teléfono de contacto<input name="telefono" type="tel" autocomplete="tel" required></label>
+        <label>Especialidad o área de interés (opcional)
+          <select name="especialidad">
+            <option value="">Sin preferencia / necesito orientación</option>
+            <option value="Medicina general">Medicina general</option>
+            <option value="Obstetricia">Obstetricia</option>
+            <option value="Enfermería y CRED">Enfermería y CRED</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Inmunizaciones">Inmunizaciones</option>
+            <option value="Salud ambiental">Salud ambiental</option>
+            <option value="Otra área">Otra área</option>
+          </select>
+        </label>
         <label>Solicitud breve<textarea name="motivo" rows="4" maxlength="500" required placeholder="Ejemplo: deseo información para solicitar una teleconsulta."></textarea></label>
-        <p class="telemedicina__privacy">Por privacidad, no incluyas diagnósticos, resultados ni otros datos médicos sensibles. El mensaje se enviará desde tu propia cuenta al contacto institucional.</p>
+        <p class="telemedicina__privacy">Por privacidad, no incluyas diagnósticos, resultados ni otros datos médicos sensibles. La elección del área es orientativa y no confirma una cita o especialidad disponible.</p>
         <div class="telemedicina__actions">
           <button class="telemedicina__button" type="submit" data-canal="gmail">Continuar por Gmail</button>
           <button class="telemedicina__button telemedicina__button--secondary" type="submit" data-canal="whatsapp">Continuar por WhatsApp</button>

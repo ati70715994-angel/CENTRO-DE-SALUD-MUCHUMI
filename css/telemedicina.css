@@ -182,6 +182,24 @@
   gap: 0.3rem;
 }
 
+.telemedicina__specialty-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.telemedicina__specialty-list li {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--brand-border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  color: var(--brand-blue);
+  font-weight: 600;
+}
+
 .telemedicina__form {
   display: grid;
   max-width: 760px;
@@ -196,7 +214,8 @@
 }
 
 .telemedicina__form input,
-.telemedicina__form textarea {
+.telemedicina__form textarea,
+.telemedicina__form select {
   width: 100%;
   padding: 0.75rem 0.85rem;
   border: 1px solid var(--brand-border);
@@ -207,7 +226,8 @@
 }
 
 .telemedicina__form input:focus-visible,
-.telemedicina__form textarea:focus-visible {
+.telemedicina__form textarea:focus-visible,
+.telemedicina__form select:focus-visible {
   outline: 3px solid var(--brand-gold);
   outline-offset: 2px;
 }
@@ -256,6 +276,10 @@
   .telemedicina__hero h1,
   .telemedicina__hero p:not(.telemedicina__eyebrow) {
     max-width: min(100% - 1.5rem, var(--content-width));
+  }
+
+  .telemedicina__specialty-list {
+    grid-template-columns: 1fr;
   }
 
   .telemedicina__actions {
