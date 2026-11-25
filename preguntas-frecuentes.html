@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Respuestas a preguntas frecuentes sobre atención, SIS, vacunación y servicios del Centro de Salud Mochumí.">
+  <meta name="theme-color" content="#0c3b60">
+  <title>Preguntas frecuentes | Centro de Salud Mochumí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/preguntas-frecuentes.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/preguntas-frecuentes.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <p>Centro de Salud Mochumí · Categoría I-3 · Lambayeque</p>
+      <a href="tel:+5174424430">Teléfono institucional: (074) 424430</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="inicio.html" aria-label="Centro de Salud Mochumí, ir al inicio">
+        <span class="brand__mark" aria-hidden="true">+</span>
+        <span><span class="brand__name">Centro de Salud Mochumí</span><span class="brand__detail">Salud con calidez al servicio de Mochumí</span></span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false">Menú</button>
+      <div class="header-actions"><a class="button" href="tel:+5174424430">Llamar al establecimiento</a></div>
+    </div>
+    <nav class="container primary-nav" id="site-menu" aria-label="Navegación principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="cartera-servicios.html">Servicios I-3</a>
+      <a href="microred-muchumi.html">Microrred</a>
+      <a href="emergencia-maternidad.html">Emergencias y maternidad</a>
+      <a href="citas-orientacion-virtual.html">Citas y orientación virtual</a>
+      <a href="preguntas-frecuentes.html" aria-current="page">Preguntas frecuentes</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero__layout">
+        <div class="page-hero__content">
+          <span class="eyebrow">Información clara para cuidarte</span>
+          <h1>Preguntas frecuentes</h1>
+          <p class="page-hero__lead">Encuentra orientación general sobre documentos, SIS, vacunación y los servicios del Centro de Salud Mochumí.</p>
+          <div class="hero-actions">
+            <a class="button" href="#faq">Buscar una respuesta</a>
+            <a class="button button--secondary" href="tel:+5174424430">Llamar: (074) 424430</a>
+          </div>
+        </div>
+        <aside class="hero-note">
+          <span class="hero-note__icon" aria-hidden="true">?</span>
+          <div><strong>¿Necesitas información vigente?</strong><p>Los horarios, requisitos y disponibilidad pueden cambiar. Llámanos para confirmarlos.</p></div>
+          <a href="tel:+5174424430">(074) 424430</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div class="faq-main">
+          <div class="section-heading">
+            <span class="eyebrow">Te ayudamos a resolver tus dudas</span>
+            <h2 id="faq-title">¿Qué necesitas saber?</h2>
+            <p>Busca por palabra o elige un tema. Las respuestas son orientativas: confirma los detalles de tu atención directamente con el establecimiento.</p>
+          </div>
+          <div class="faq-tools">
+            <label class="search-label" for="faq-search">Buscar preguntas</label>
+            <div class="search-field">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+              <input id="faq-search" type="search" placeholder="Ej.: SIS, vacunas, horario" autocomplete="off" data-faq-search>
+            </div>
+            <div class="filter-group" role="group" aria-label="Filtrar preguntas por tema">
+              <button class="filter-button is-active" type="button" data-faq-filter="todos" aria-pressed="true">Todas</button>
+              <button class="filter-button" type="button" data-faq-filter="atencion" aria-pressed="false">Atención</button>
+              <button class="filter-button" type="button" data-faq-filter="sis" aria-pressed="false">SIS y documentos</button>
+              <button class="filter-button" type="button" data-faq-filter="servicios" aria-pressed="false">Servicios</button>
+            </div>
+            <p class="result-count" data-faq-count role="status" aria-live="polite">Se muestran 8 preguntas.</p>
+          </div>
+
+          <div class="faq-list" data-faq-list>
+            <details class="faq-item" data-faq-category="atencion" open>
+              <summary>¿Cuál es el horario de atención del Centro de Salud Mochumí?</summary>
+              <div class="faq-answer"><p>El establecimiento brinda atención diaria durante 12 horas ininterrumpidas. Para confirmar el horario actual y saber si el servicio que necesitas está disponible, llama al <a href="tel:+5174424430">(074) 424430</a> antes de acudir.</p></div>
+            </details>
+            <details class="faq-item" data-faq-category="sis">
+              <summary>¿Qué documentos debo llevar para atenderme?</summary>
+              <div class="faq-answer"><p>Ten a mano tu documento de identidad. Si corresponde, prepara también la información de tu afiliación al SIS. Los requisitos pueden variar según el servicio; confirma por teléfono y evita compartir documentos o datos personales en canales no verificados.</p></div>
+            </details>
+            <details class="faq-item" data-faq-category="sis">
+              <summary>¿Cómo consulto si estoy afiliado al SIS o qué cobertura tengo?</summary>
+              <div class="faq-answer"><p>La afiliación y cobertura dependen de la situación de cada persona. Consulta directamente al establecimiento o a los canales oficiales del SIS para verificar tu caso y los pasos vigentes. No envíes tu DNI ni información personal por esta página.</p></div>
+            </details>
+            <details class="faq-item" data-faq-category="servicios">
+              <summary>¿Qué servicios ofrece el Centro de Salud Mochumí?</summary>
+              <div class="faq-answer"><p>La cartera incluye medicina general, enfermería, CRED, inmunizaciones, obstetricia y salud materna, odontología, urgencias, referencias y actividades de salud ambiental. Revisa la <a href="cartera-servicios.html">cartera de servicios</a> y llama para confirmar disponibilidad y requisitos.</p></div>
+            </details>
+            <details class="faq-item" data-faq-category="servicios">
+              <summary>¿Qué días y a qué hora hay vacunación?</summary>
+              <div class="faq-answer"><p>El servicio de inmunizaciones sigue el esquema nacional, pero los horarios, las campañas y la disponibilidad de vacunas pueden variar. Llama al <a href="tel:+5174424430">(074) 424430</a> antes de acudir para confirmar qué vacunas están disponibles y qué documentos necesitas.</p></div>
+            </details>
+            <details class="faq-item" data-faq-category="servicios">
+              <summary>¿El establecimiento realiza actividades sobre metales pesados?</summary>
+              <div class="faq-answer"><p>El manual institucional contempla actividades de salud ambiental, como intervenciones de campo, tamizaje y monitoreo nutricional preventivo. Consulta al equipo de salud para conocer las actividades vigentes, su alcance y cómo recibir orientación.</p></div>
+            </details>
+            <details class="faq-item" data-faq-category="servicios">
+              <summary>¿Puedo recibir atención por telemedicina?</summary>
+              <div class="faq-answer"><p>El establecimiento orienta sobre la coordinación de teleconsultas y teleorientación mediante Teleatiende. La disponibilidad de especialidades y la forma de acceso pueden cambiar; <a href="citas-orientacion-virtual.html">consulta cómo solicitar orientación</a> o llama para conocer los pasos actuales.</p></div>
+            </details>
+            <details class="faq-item" data-faq-category="atencion">
+              <summary>¿Qué hago si necesito atención por una urgencia?</summary>
+              <div class="faq-answer"><p>Llama al establecimiento para orientación y coordinación de referencias. Esta página no es un servicio de emergencias: si hay peligro inmediato, busca atención de emergencia sin demora. Confirma por teléfono la disponibilidad de ambulancia y el traslado.</p></div>
+            </details>
+          </div>
+          <p class="empty-state" data-faq-empty hidden>No encontramos preguntas con esos términos. Prueba otra búsqueda o <a href="tel:+5174424430">llámanos</a>.</p>
+        </div>
+
+        <aside class="faq-sidebar" aria-label="Información de contacto">
+          <section class="info-card">
+            <span class="info-card__icon" aria-hidden="true">i</span>
+            <h2>Confirma antes de acudir</h2>
+            <p>Los horarios de servicio, requisitos y disponibilidad pueden cambiar. Nuestro equipo puede orientarte por teléfono.</p>
+            <a class="button" href="tel:+5174424430">Llamar al (074) 424430</a>
+          </section>
+          <section class="info-card info-card--soft">
+            <h2>¿Buscas un tema específico?</h2>
+            <ul class="quick-links">
+              <li><a href="cartera-servicios.html">Cartera de servicios</a></li>
+              <li><a href="citas-orientacion-virtual.html">Citas y teleorientación</a></li>
+              <li><a href="emergencia-maternidad.html">Emergencias y maternidad</a></li>
+              <li><a href="microred-muchumi.html">Establecimientos de la microrred</a></li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="disclaimer-title">
+      <div class="container">
+        <div class="disclaimer">
+          <span class="disclaimer__icon" aria-hidden="true">!</span>
+          <div>
+            <h2 id="disclaimer-title">Información importante</h2>
+            <p>Este sitio brinda información general y no sustituye la evaluación ni las indicaciones del personal de salud. No compartas información médica o personal en formularios de demostración.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__main">
+      <div><h2>Centro de Salud Mochumí</h2><p>Salud con calidez al servicio de nuestra comunidad.</p></div>
+      <div><h3>Contacto</h3><p><a href="tel:+5174424430">(074) 424430</a><br>Calle Federico Villarreal S/N, Mochumí, Lambayeque</p></div>
+      <div><h3>Enlaces rápidos</h3><p><a href="inicio.html">Inicio</a><br><a href="cartera-servicios.html">Cartera de servicios</a><br><a href="microred-muchumi.html">Microrred</a><br><a href="citas-orientacion-virtual.html">Citas y orientación</a></p></div>
+    </div>
+    <div class="container site-footer__bottom"><p>© 2026 Centro de Salud Mochumí · Información referencial; confirma los datos vigentes por teléfono.</p></div>
+  </footer>
+  <a class="floating-help" href="tel:+5174424430" aria-label="Llamar al Centro de Salud Mochumí al 074 424430">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span class="floating-help__label">Llamar al centro de salud</span>
+  </a>
+</body>
+</html>
