@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#telemedicina-form");
   const message = document.querySelector("#telemedicina-mensaje");
   if (!form || !message) return;
-  const email = "ati61050757@istrfa.edu.pe, ati";
+  const email = "ati61050757@istrfa.edu.pe, ati72821785@istrfa.edu.pe, ati72341774@istrfa.edu.pe, ati73262954@istrfa.edu.pe, ati75837615@istrfa.edu.pe";
   const whatsapp = "51927220019";
 
   form.addEventListener("submit", (event) => {

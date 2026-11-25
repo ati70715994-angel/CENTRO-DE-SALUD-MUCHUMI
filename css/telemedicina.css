@@ -1,32 +1,279 @@
-.telemedicina { --tm-green:#126b55; --tm-ink:#17332c; --tm-muted:#52655f; --tm-pale:#edf6f2; margin:0; color:var(--tm-ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
-.telemedicina * { box-sizing:border-box; }
-.telemedicina a { color:var(--tm-green); }
-.telemedicina__skip { position:absolute; left:-9999px; top:auto; }
-.telemedicina__skip:focus { left:1rem; top:1rem; z-index:5; background:white; padding:.7rem; }
-.telemedicina__header { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1rem max(1.25rem,calc((100% - 1100px)/2)); border-bottom:1px solid #dbe7e2; }
-.telemedicina__brand { font-weight:750; text-decoration:none; color:var(--tm-ink)!important; }
-.telemedicina__nav { display:flex; gap:1.2rem; flex-wrap:wrap; }
-.telemedicina__hero { padding:clamp(3rem,8vw,6rem) max(1.25rem,calc((100% - 1100px)/2)); background:linear-gradient(120deg,#e7f5ee,#f5faf7); }
-.telemedicina__hero h1 { max-width:700px; margin:.1rem 0 1rem; font-size:clamp(2.4rem,6vw,4.5rem); line-height:1.05; }
-.telemedicina__hero p:not(.telemedicina__eyebrow) { max-width:680px; color:var(--tm-muted); font-size:1.15rem; }
-.telemedicina__eyebrow { margin:0 0 .45rem; color:var(--tm-green); font-weight:750; text-transform:uppercase; letter-spacing:.08em; font-size:.8rem; }
-.telemedicina__button { display:inline-block; border:0; border-radius:.55rem; background:var(--tm-green); color:white!important; text-decoration:none; padding:.8rem 1.1rem; font:inherit; font-weight:700; cursor:pointer; }
-.telemedicina__button--secondary { background:#fff; color:var(--tm-green)!important; box-shadow:inset 0 0 0 2px var(--tm-green); }
-.telemedicina__section { max-width:1100px; margin:auto; padding:3.5rem 1.25rem; }
-.telemedicina__section h2 { margin:.2rem 0 1rem; font-size:clamp(1.7rem,4vw,2.4rem); line-height:1.2; }
-.telemedicina__section--tint { max-width:none; padding-left:max(1.25rem,calc((100% - 1100px)/2)); padding-right:max(1.25rem,calc((100% - 1100px)/2)); background:#f5f8f7; }
-.telemedicina__steps { list-style:none; padding:0; display:grid; gap:1rem; }
-.telemedicina__steps li { display:flex; gap:1rem; padding:1.15rem; border:1px solid #dce9e3; border-radius:.8rem; background:white; }
-.telemedicina__steps li>span { display:grid; place-items:center; flex:0 0 2.2rem; height:2.2rem; border-radius:50%; background:var(--tm-pale); color:var(--tm-green); font-weight:800; }
-.telemedicina__steps h3 { margin:0 0 .25rem; }
-.telemedicina__steps p { margin:0; color:var(--tm-muted); }
-.telemedicina__note,.telemedicina__availability { border-left:4px solid #d29b34; padding:1rem; background:#fff8e8; }
-.telemedicina__availability { display:grid; gap:.3rem; max-width:700px; margin-top:1.2rem; }
-.telemedicina__form { display:grid; gap:1rem; max-width:650px; }
-.telemedicina__form label { display:grid; gap:.4rem; font-weight:650; }
-.telemedicina__form input,.telemedicina__form textarea { width:100%; border:1px solid #b8cbc2; border-radius:.45rem; padding:.7rem; font:inherit; }
-.telemedicina__privacy { margin:0; color:var(--tm-muted); font-size:.92rem; }
-.telemedicina__actions { display:flex; gap:.75rem; flex-wrap:wrap; }
-.telemedicina__form-message { min-height:1.5em; color:var(--tm-green); font-weight:650; }
-.telemedicina__footer { padding:1.5rem; text-align:center; background:#17332c; color:#fff; }
-@media(max-width:650px) { .telemedicina__header { align-items:flex-start; flex-direction:column; } .telemedicina__nav { gap:.8rem; } }
+/* Requiere css/inicio.css cargado primero en telemedicina.html. */
+.telemedicina {
+  color: var(--brand-ink);
+  background: var(--brand-mint);
+}
+
+.telemedicina__header {
+  position: relative;
+  z-index: 2;
+  background: var(--surface);
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.telemedicina__brand {
+  display: block;
+  width: min(var(--content-width), calc(100% - 2.5rem));
+  margin-inline: auto;
+  padding-top: 1.1rem;
+  color: var(--brand-blue);
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.telemedicina__header .primary-nav {
+  padding-top: 0.45rem;
+}
+
+.telemedicina__hero {
+  padding: clamp(4rem, 9vw, 7.5rem) 0;
+  background:
+    radial-gradient(ellipse at 88% 18%, rgb(230 184 0 / 18%), transparent 30%),
+    linear-gradient(120deg, #eaf5ee 0%, #f4f9f5 58%, #e8f2f7 100%);
+}
+
+.telemedicina__hero > *,
+.telemedicina__section > * {
+  width: min(var(--content-width), calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+.telemedicina__hero > * {
+  width: min(760px, calc(100% - 2.5rem));
+  margin-right: 0;
+  margin-left: max(1.25rem, calc((100% - var(--content-width)) / 2));
+  text-align: left;
+}
+
+.telemedicina__hero h1 {
+  max-width: min(760px, calc(100% - 2.5rem));
+  margin-bottom: 1.15rem;
+  color: var(--brand-blue);
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  font-size: clamp(2.35rem, 5vw, 4.35rem);
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.telemedicina__hero p:not(.telemedicina__eyebrow) {
+  max-width: min(640px, calc(100% - 2.5rem));
+  color: #344967;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+}
+
+.telemedicina__eyebrow {
+  margin-bottom: 1rem;
+  color: var(--brand-green-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.telemedicina__button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.1rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: var(--brand-green-dark);
+  color: var(--surface);
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.telemedicina__hero > .telemedicina__button {
+  width: fit-content;
+  margin-right: 0;
+  margin-left: max(1.25rem, calc((100% - var(--content-width)) / 2));
+}
+
+.telemedicina__button:hover {
+  transform: translateY(-1px);
+  background: var(--brand-blue);
+  color: var(--surface);
+}
+
+.telemedicina__button--secondary {
+  border-color: var(--brand-blue);
+  background: transparent;
+  color: var(--brand-blue);
+}
+
+.telemedicina__button--secondary:hover {
+  background: var(--brand-blue);
+  color: var(--surface);
+}
+
+.telemedicina__section {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.telemedicina__section h2 {
+  margin-bottom: 1rem;
+  color: var(--brand-blue);
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  line-height: 1.2;
+}
+
+.telemedicina__section h3 {
+  color: var(--brand-blue);
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  font-size: 1.15rem;
+}
+
+.telemedicina__section--tint {
+  background: var(--surface);
+}
+
+.telemedicina__steps {
+  display: grid;
+  gap: 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.telemedicina__steps li {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--brand-border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.telemedicina__steps li > span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  border-radius: 14px;
+  background: #e8f4ed;
+  color: var(--brand-green-dark);
+  font-weight: 700;
+}
+
+.telemedicina__steps p,
+.telemedicina__section > p:not(.telemedicina__eyebrow) {
+  color: var(--brand-muted);
+}
+
+.telemedicina__note,
+.telemedicina__availability {
+  padding: 1.2rem 1.35rem;
+  border: 1px solid #e8cf62;
+  border-left: 5px solid var(--brand-gold);
+  border-radius: var(--radius-card);
+  background: #fffbed;
+}
+
+.telemedicina__availability {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.telemedicina__form {
+  display: grid;
+  max-width: 760px;
+  gap: 1rem;
+}
+
+.telemedicina__form label {
+  display: grid;
+  gap: 0.4rem;
+  color: var(--brand-blue);
+  font-weight: 600;
+}
+
+.telemedicina__form input,
+.telemedicina__form textarea {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--brand-ink);
+  font: inherit;
+}
+
+.telemedicina__form input:focus-visible,
+.telemedicina__form textarea:focus-visible {
+  outline: 3px solid var(--brand-gold);
+  outline-offset: 2px;
+}
+
+.telemedicina__privacy,
+.telemedicina__form-message {
+  color: var(--brand-muted);
+  font-size: 0.92rem;
+}
+
+.telemedicina__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.telemedicina__footer {
+  padding: 2rem 1.25rem;
+  background: #082f4d;
+  color: #eaf2f7;
+  text-align: center;
+}
+
+.telemedicina__skip {
+  position: absolute;
+  z-index: 20;
+  top: -5rem;
+  left: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background: var(--brand-blue);
+  color: var(--surface);
+}
+
+.telemedicina__skip:focus {
+  top: 1rem;
+}
+
+@media (max-width: 560px) {
+  .telemedicina__brand,
+  .telemedicina__hero > *,
+  .telemedicina__section > * {
+    width: min(100% - 1.5rem, var(--content-width));
+  }
+
+  .telemedicina__hero h1,
+  .telemedicina__hero p:not(.telemedicina__eyebrow) {
+    max-width: min(100% - 1.5rem, var(--content-width));
+  }
+
+  .telemedicina__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .telemedicina__hero > .telemedicina__button {
+    margin-left: max(0.75rem, calc((100% - var(--content-width)) / 2));
+  }
+
+  .telemedicina__hero > * {
+    margin-left: max(0.75rem, calc((100% - var(--content-width)) / 2));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .telemedicina__button {
+    transition: none;
+  }
+}
