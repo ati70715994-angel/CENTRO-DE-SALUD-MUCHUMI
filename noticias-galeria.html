@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Noticias, campañas y galería del Centro de Salud de Mochumí.">
+
+    <title>Noticias y Galería | Centro de Salud de Mochumí</title>
+
+    <link rel="stylesheet" href="css/noticias-galeria.css">
+    <script src="js/noticias-galeria.js" defer></script>
+</head>
+
+<body class="pagina-noticias">
+
+    <a class="ng-skip" href="#contenido">Saltar al contenido</a>
+
+    <!-- ENCABEZADO INSTITUCIONAL -->
+    <header class="ng-header">
+        <div class="ng-container ng-header__inner">
+
+            <a class="ng-brand" href="inicio.html">
+                <span class="ng-brand__mark" aria-hidden="true">+</span>
+                <span>
+                    Centro de Salud de Mochumí
+                    <small>Establecimiento I-3</small>
+                </span>
+            </a>
+
+            <button class="ng-menu" type="button"
+                aria-controls="menu" aria-expanded="false">
+                Menú
+            </button>
+
+            <nav id="menu" class="ng-nav" aria-label="Navegación principal">
+                <a href="inicio.html">Inicio</a>
+                <a href="microred-muchumi.html">Microred</a>
+                <a href="emergencia-maternidad.html">Emergencia</a>
+                <a href="citas-orientacion-virtual.html">Citas</a>
+                <a href="noticias-galeria.html" aria-current="page">
+                    Noticias y Galería
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="contenido">
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="ng-hero">
+            <div class="ng-container ng-hero__inner">
+
+                <div>
+                    <nav aria-label="Ruta de navegación" class="ng-crumb">
+                        <a href="inicio.html">Inicio</a> / Noticias y Galería
+                    </nav>
+
+                    <p class="ng-kicker">COMUNICACIÓN INSTITUCIONAL</p>
+
+                    <h1>Noticias y Galería</h1>
+
+                    <p>
+                        Conoce las actividades, campañas y novedades
+                        al servicio de nuestra comunidad.
+                    </p>
+
+                    <a class="ng-button ng-button--light" href="#ultimas">
+                        Explorar noticias
+                    </a>
+                </div>
+
+                <img class="ng-hero__image"
+                    src="img/noticias/campana-salud.jpg"
+                    alt="Fotografía institucional de salud comunitaria">
+
+            </div>
+        </section>
+
+        <div class="ng-container">
+
+            <p class="ng-notice">
+                Maqueta académica: las noticias, fechas e imágenes
+                de ejemplo son provisionales y no acreditan
+                acontecimientos reales.
+            </p>
+
+            <!-- NOTICIA DESTACADA -->
+            <section class="ng-section" aria-labelledby="destacada-titulo">
+
+                <p class="ng-kicker">ACTUALIDAD</p>
+                <h2 id="destacada-titulo">Noticia destacada</h2>
+
+                <article class="ng-feature">
+
+                    <img src="img/noticias/ambulancia.jpg"
+                        alt="Fotografía de ambulancia">
+
+                    <div class="ng-feature__body">
+
+                        <span class="ng-tag">Entregas y equipamiento</span>
+
+                        <p class="ng-meta">Fecha por confirmar · Ejemplo</p>
+
+                        <h3>Reporte de entrega de ambulancia</h3>
+
+                        <p>
+                            Espacio destinado a informar sobre la
+                            incorporación de unidades de transporte
+                            asistencial y su aporte a la atención
+                            de emergencias.
+                        </p>
+
+                        <button class="ng-button"
+                            data-news="ambulancia" type="button">
+                            Leer más →
+                        </button>
+
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- ÚLTIMAS NOTICIAS -->
+            <section id="ultimas" class="ng-section"
+                aria-labelledby="ultimas-titulo">
+
+                <p class="ng-kicker">INFORMACIÓN PARA TODOS</p>
+                <h2 id="ultimas-titulo">Últimas noticias</h2>
+
+                <div class="ng-toolbar">
+
+                    <!-- FILTROS -->
+                    <div class="ng-filters" role="group"
+                        aria-label="Categorías de noticias">
+
+                        <button type="button"
+                            data-category="todas" aria-pressed="true">
+                            Todas
+                        </button>
+
+                        <button type="button"
+                            data-category="entregas" aria-pressed="false">
+                            Entregas y equipamiento
+                        </button>
+
+                        <button type="button"
+                            data-category="salud" aria-pressed="false">
+                            Salud comunitaria
+                        </button>
+
+                        <button type="button"
+                            data-category="vacunacion" aria-pressed="false">
+                            Vacunación
+                        </button>
+
+                    </div>
+
+                    <!-- BUSCADOR -->
+                    <label class="ng-search">
+                        Buscar noticias
+                        <input id="buscar" type="search"
+                            placeholder="Título o palabra clave">
+                    </label>
+
+                </div>
+
+                <p id="resultados" class="ng-meta" role="status"></p>
+
+                <!-- TARJETAS GENERADAS CON JAVASCRIPT -->
+                <div id="noticias" class="ng-grid"></div>
+
+                <noscript>
+                    Activa JavaScript para consultar las noticias,
+                    filtros y galería.
+                </noscript>
+
+            </section>
+
+            <!-- GALERÍA FOTOGRÁFICA -->
+            <section id="galeria" class="ng-section"
+                aria-labelledby="galeria-titulo">
+
+                <p class="ng-kicker">NUESTRA COMUNIDAD</p>
+
+                <h2 id="galeria-titulo">Galería fotográfica</h2>
+
+                <p>
+                    Espacios reservados para el registro visual
+                    de las actividades institucionales.
+                </p>
+
+                <div id="fotos" class="ng-gallery"></div>
+
+            </section>
+
+            <!-- ARCHIVO DE PRENSA -->
+            <section id="archivo" class="ng-section"
+                aria-labelledby="archivo-titulo">
+
+                <p class="ng-kicker">MEMORIA INSTITUCIONAL</p>
+
+                <h2 id="archivo-titulo">Archivo de prensa</h2>
+
+                <p>
+                    Consulta las publicaciones anteriores por año
+                    y categoría. Las fechas de esta maqueta son ejemplos.
+                </p>
+
+                <div class="ng-archive-filters">
+
+                    <label>
+                        Año
+                        <select id="anio">
+                            <option value="todos">Todos los años</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Categoría
+                        <select id="categoria-archivo">
+                            <option value="todas">Todas</option>
+                            <option value="entregas">
+                                Entregas y equipamiento
+                            </option>
+                            <option value="salud">Salud comunitaria</option>
+                            <option value="vacunacion">Vacunación</option>
+                        </select>
+                    </label>
+
+                </div>
+
+                <p id="archivo-estado" role="status" class="ng-meta"></p>
+
+                <div id="publicaciones" class="ng-archive"></div>
+
+            </section>
+
+            <!-- REFERENCIAS -->
+            <section class="ng-section ng-references"
+                aria-labelledby="ref-titulo">
+
+                <h2 id="ref-titulo">Referencias y fuentes</h2>
+
+                <p>
+                    Las publicaciones locales deberán contrastarse
+                    con fuentes oficiales antes de su difusión.
+                    Los siguientes portales son referencias de consulta,
+                    no pruebas de los eventos de ejemplo.
+                </p>
+
+                <ol>
+                    <li>
+                        Ministerio de Salud del Perú,
+                        «Portal institucional». [En línea].
+                        Disponible:
+                        <a href="https://www.gob.pe/minsa">
+                            www.gob.pe/minsa
+                        </a>.
+                    </li>
+
+                    <li>
+                        Gobierno Regional de Lambayeque,
+                        «Portal institucional». [En línea].
+                        Disponible:
+                        <a href="https://www.gob.pe/regionlambayeque">
+                            www.gob.pe/regionlambayeque
+                        </a>.
+                    </li>
+                </ol>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="ng-footer">
+
+        <div class="ng-container">
+            <strong>Centro de Salud de Mochumí · I-3</strong>
+            <p>Portal institucional — Proyecto académico</p>
+            <a href="#contenido">Volver arriba ↑</a>
+        </div>
+
+    </footer>
+
+    <!-- MODAL PARA LEER NOTICIAS -->
+    <dialog id="detalle" class="ng-dialog"
+        aria-labelledby="detalle-titulo">
+
+        <div class="ng-dialog__head">
+            <span>Información institucional</span>
+
+            <button type="button" data-close="detalle"
+                aria-label="Cerrar noticia">
+                ✕
+            </button>
+        </div>
+
+        <img id="detalle-img" alt="">
+
+        <div class="ng-dialog__body">
+
+            <p id="detalle-meta" class="ng-meta"></p>
+
+            <h2 id="detalle-titulo"></h2>
+
+            <p id="detalle-texto"></p>
+
+            <p class="ng-notice">
+                Contenido demostrativo, pendiente de verificación.
+            </p>
+
+        </div>
+
+    </dialog>
+
+    <!-- MODAL DE GALERÍA -->
+    <dialog id="visor" class="ng-dialog ng-dialog--gallery"
+        aria-labelledby="visor-titulo">
+
+        <div class="ng-dialog__head">
+
+            <h2 id="visor-titulo">Galería fotográfica</h2>
+
+            <button type="button" data-close="visor"
+                aria-label="Cerrar galería">
+                ✕
+            </button>
+
+        </div>
+
+        <img id="visor-img" alt="">
+
+        <div class="ng-dialog__body">
+
+            <p id="visor-caption" aria-live="polite"></p>
+
+            <div class="ng-gallery-controls">
+
+                <button class="ng-button" id="anterior" type="button">
+                    ← Anterior
+                </button>
+
+                <span id="contador"></span>
+
+                <button class="ng-button" id="siguiente" type="button">
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+</body>
+</html>
